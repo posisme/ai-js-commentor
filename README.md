@@ -4,6 +4,7 @@ This is the first run at an AI tool to get comments for javascript
 
 # Docker and Docker Compose files to use for development
 ## Dockerfile
+```
 FROM ubuntu:latest
 
 ENV TZ=America/Chicago
@@ -27,8 +28,9 @@ RUN sudo usermod -a -G sudo randy
 STOPSIGNAL SIGWINCH
 WORKDIR /home/randy
 CMD ["tail", "-f", "/dev/null"]
-
+```
 ## docker-compose.yml
+```
 services:
   app:
     build: .
@@ -37,3 +39,4 @@ services:
     volumes:
       - ./app:/home/randy  # Mount your application directory to the container
     restart: always
+```
