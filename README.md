@@ -10,11 +10,11 @@ FROM ubuntu:latest
 ENV TZ=America/Chicago
 
 RUN apt update -y
-RUN	apt install nodejs -y
-RUN	apt install sudo -y
-RUN	apt install rsync -y
-RUN	apt install sqlite3 -y
-RUN	apt install git -y
+RUN apt install nodejs -y
+RUN apt install sudo -y
+RUN apt install rsync -y
+RUN apt install sqlite3 -y
+RUN apt install git -y
 RUN apt install npm -y
 RUN npm install --global yo generator-code
 RUN npm install -g @vscode/vsce
