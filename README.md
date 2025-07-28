@@ -40,3 +40,11 @@ services:
       - ./app:/home/randy  # Mount your application directory to the container
     restart: always
 ```
+# Configs
+You will need to edit your settings.json and include the following:
+```
+"ai-js-commentor-apiurl":{
+        "url":"https://openwebui.url.that.youve.installed/api/",
+        "key":"yourapikey"
+    }
+```
